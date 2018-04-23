@@ -1,5 +1,5 @@
 //
-// Created by Administrator on 2018/4/23.
+// Created by LiDaoMeng on 2018/4/23.
 //
 #include <pthread.h>
 #include <stdio.h>
