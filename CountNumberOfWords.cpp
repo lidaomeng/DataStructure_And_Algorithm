@@ -74,6 +74,8 @@ int master(char* text, int size, int n){
         loTextInfo.miBegin_offset = liBeg;
         loTextInfo.miEnd_offset = liBeg + liOffset;
         
+        liBeg += liOffset;
+        
         liRet = pthread_create(szPThread + i, nullptr, thread_worker, (void*)&loTextInfo);
         if(liRet != 0){
             printf("pthread_create Error [%d]\n", i);
